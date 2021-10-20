@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bear</title>
+    <style>
+        .bearbody {
+            width: 210px;
+            height: 210px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .bearbody::before {
+            content: "";
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: red;
+            position: absolute;
+            top: 40%;
+            left: -5%;
+        }
+        
+        .bearbody::after {
+            content: "";
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: red;
+            position: absolute;
+            top: 40%;
+            right: -6%;
+        }
+        
+        .mouth {
+            width: 90px;
+            height: 60px;
+            border-radius: 50%;
+            background: white;
+            position: absolute;
+            top: 10%;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .mouth::before {
+            content: "";
+            width: 55px;
+            height: 20px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            top: 30%;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .mouth::after {
+            content: "";
+            width: 20px;
+            height: 13px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 60%;
+            right: 0;
+            margin: auto;
+        }
+        
+        .eye {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: white;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            bottom: 150%;
+            right: 0;
+            margin: auto;
+        }
+        
+        .eye::before {
+            content: "";
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: white;
+            position: absolute;
+            top: 0;
+            left: 220%;
+            bottom: 10%;
+            right: 0;
+            margin: auto;
+        }
+        
+        .blackeye {
+            width: 28px;
+            height: 28px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            bottom: 50%;
+            right: 0;
+            margin: auto;
+        }
+        
+        .blackeye::before {
+            content: "";
+            width: 28px;
+            height: 28px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            left: 310%;
+            bottom: 10%;
+        }
+        
+        .blackear {
+            width: 40px;
+            height: 40px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 150%;
+            right: 100%;
+        }
+        
+        .blackear::before {
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 10%;
+            left: 370%;
+        }
+        
+        .whiteear {
+            width: 25px;
+            height: 25px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .whiteear::before {
+            content: "";
+            width: 25px;
+            height: 25px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            left: 590%;
+            bottom: 20%;
+        }
+        
+        .bearv {
+            width: 30px;
+            height: 30px;
+            background: white;
+            position: absolute;
+            transform: skewX(50deg);
+            top: 600%;
+            left: 230%;
+        }
+        
+        .bearv::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            background: white;
+            position: absolute;
+            transform: skewX(-66deg);
+            left: 120%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="bearbody">
+        <div class="mouth">
+            <div class="eye">
+                <div class="blackeye">
+                    <div class="blackear">
+                        <div class="whiteear">
+                            <div class="bearv"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
